@@ -9,29 +9,21 @@ package com.mycompany.patronbuilder.builder;
  *
  * @author Andres Rios
  */
-public class DishBuilder {
+public abstract class DishBuilder {
     
     Dish dish;
     
     
-    public void setCore(){
-        
-    }
-    
-    public void addParts(){
-        
-    }
-    
-    public void setSize(){
-        
-    }
-    
     public Dish getDish(){
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+       
+    public abstract DishBuilder setCore();
     
-    public void setDish(Dish dish){
-        
-    }
+    public abstract DishBuilder addParts();
     
+    public abstract DishBuilder setSize();
+    
+    public abstract DishBuilder setDish(Dish dish);
+
 }

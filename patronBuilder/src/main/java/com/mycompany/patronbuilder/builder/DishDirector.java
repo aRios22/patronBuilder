@@ -13,17 +13,33 @@ public class DishDirector {
     
     DishBuilder dishBuilder;
     
-
-    public void setDishBuilder(DishBuilder orientalBuilder) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    /**
+     * Cambia el valor del atributo dishBuilder
+     * @param dishBuilder nuevo valor para el atributo
+     */
+    public void setDishBuilder(DishBuilder dishBuilder) {
+        this.dishBuilder = dishBuilder;
     }
     
+    /**
+     * Retorna el valor actual del atributo dishBuilder
+     * @return Valor de dishBuilder
+     */
     public Dish getDish() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.dishBuilder.getDish();
     }
 
+    /**
+     * Construye un plato por partes
+     */
     public void buildDish() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        dishBuilder        
+                .setCore()
+                .addParts()
+                .setSize();
+               
+                    
     }
   
 }
