@@ -20,6 +20,10 @@ public class Dish {
     EnumSize size;
     List<Dish> parts;
 
+    /**
+     * Calcula el precio de las partes de un plato
+     * @return
+     */
     public String calculatePriceParts() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
