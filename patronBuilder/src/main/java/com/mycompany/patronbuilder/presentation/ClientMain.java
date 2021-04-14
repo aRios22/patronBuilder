@@ -5,10 +5,10 @@
  */
 package com.mycompany.patronbuilder.presentation;
 
-import com.mycompany.patronbuilder.Dish;
-import com.mycompany.patronbuilder.DishBuilder;
-import com.mycompany.patronbuilder.DishDirector;
-import com.mycompany.patronbuilder.OrientalDishBuilder;
+import com.mycompany.patronbuilder.builder.Dish;
+import com.mycompany.patronbuilder.builder.DishBuilder;
+import com.mycompany.patronbuilder.builder.DishDirector;
+import com.mycompany.patronbuilder.builder.OrientalDishBuilder;
 
 /**
  *

@@ -3,27 +3,33 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.patronbuilder;
+package com.mycompany.patronbuilder.builder;
+
+import java.util.List;
 
 /**
  *
  * @author Andres Rios
  */
-public class DishDirector {
+public class Dish {
     
-    DishBuilder dishBuilder;
-    
+    String name;
+    String description;
+    String image;
+    int price;
+    EnumSize size;
+    List<Dish> parts;
 
-    public void setDishBuilder(DishBuilder orientalBuilder) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    public Dish getDish() {
+    /**
+     * Calcula el precio de las partes de un plato
+     * @return
+     */
+    public String calculatePriceParts() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void buildDish() {
+    public Object getParts() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-  
+    
 }
