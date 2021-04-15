@@ -13,8 +13,22 @@ public class OrientalDish extends Dish{
 
     String orientalName;
 
+    /**
+     * Constructor parametrizado de la clasee Oriental Dish.
+     * @param name
+     * @param description
+     * @param image
+     * @param price
+     * @param size
+     * @param east_rice 
+     */
     OrientalDish(String name, String description, String image, int price, EnumSize size, String east_rice) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.name = name;
+        this.description = description;
+        this.image = image;
+        this.price = price;
+        this.size = size;
+        this.orientalName = east_rice;
     }
     
     

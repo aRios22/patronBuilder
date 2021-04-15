@@ -13,17 +13,38 @@ public abstract class DishBuilder {
     
     Dish dish;
     
-    
+    /**
+     * Accede a el plato actual
+     * @return  Objeto plato actual
+     */
     public Dish getDish(){
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.dish;
     }
-       
+    
+    /**
+     * Redefine el valor del plato actual
+     * @param dish
+     */
+    public void setDish(Dish dish){
+        this.dish = dish;
+    }
+     
+    /**
+     * Definicion metodo de interfaz
+     * @return 
+     */
     public abstract DishBuilder setCore();
     
+    /**
+     * Definicion metodo de interfaz
+     * @return 
+     */
     public abstract DishBuilder addParts();
     
+    /**
+     * Definicion metodo de interfaz
+     * @return 
+     */
     public abstract DishBuilder setSize();
-    
-    public abstract DishBuilder setDish(Dish dish);
 
 }

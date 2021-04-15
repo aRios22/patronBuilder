@@ -34,12 +34,11 @@ public class DishDirector {
      */
     public void buildDish() {
         
-        dishBuilder        
+        dishBuilder
                 .setCore()
                 .addParts()
                 .setSize();
-               
-                    
+                         
     }
   
 }

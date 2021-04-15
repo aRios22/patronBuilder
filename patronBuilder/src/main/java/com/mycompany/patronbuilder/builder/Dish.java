@@ -25,11 +25,19 @@ public class Dish {
      * @return
      */
     public String calculatePriceParts() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        int totalPrice = 0;
+        for (Dish part : this.parts) {
+            totalPrice += part.price;
+        }
+        return Integer.toString(totalPrice);
     }
 
-    public Object getParts() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    /**
+     * Retorna las partes de un plato
+     * @return lista de las partes de un plato
+     */
+    public List<Dish> getParts() {
+        return this.parts;
     }
     
 }
