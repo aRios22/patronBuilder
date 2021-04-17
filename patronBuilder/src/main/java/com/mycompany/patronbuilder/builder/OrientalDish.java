@@ -11,10 +11,10 @@ package com.mycompany.patronbuilder.builder;
  */
 public class OrientalDish extends Dish{
 
-    String orientalName;
+    String type;
 
     /**
-     * Constructor parametrizado de la clasee Oriental Dish.
+     * Constructor parametrizado de la clase Oriental Dish.
      * @param name
      * @param description
      * @param image
@@ -22,14 +22,27 @@ public class OrientalDish extends Dish{
      * @param size
      * @param east_rice 
      */
-    OrientalDish(String name, String description, String image, int price, EnumSize size, String east_rice) {
+    OrientalDish(String name, String description, String image, int price, EnumSize size, String type) {
         this.name = name;
         this.description = description;
         this.image = image;
         this.price = price;
         this.size = size;
-        this.orientalName = east_rice;
+        this.type = type;
     }
     
+        /**
+     * Constructor parametrizado de la clase Oriental Dish usado para construir componentes de un plato.
+     * @param name
+     * @param description
+     * @param image
+     * @param price
+     */
+    OrientalDish(String name, String description, String image, int price) {
+        this.name = name;
+        this.description = description;
+        this.image = image;
+        this.price = price; 
+    }
     
 }

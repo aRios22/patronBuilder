@@ -21,15 +21,19 @@ public class Dish {
     List<Dish> parts;
 
     /**
-     * Calcula el precio de las partes de un plato
-     * @return
+     * Calcula el precio de las partes de un plato, si el tamaño del plato es medio, el precio se reduce a 60%
+     * @return Precio del lato completo
      */
     public String calculatePriceParts() {
-        int totalPrice = 0;
+        float totalPrice = this.price;
         for (Dish part : this.parts) {
             totalPrice += part.price;
         }
-        return Integer.toString(totalPrice);
+        if(this.size == EnumSize.HALF){
+            totalPrice = (float) (totalPrice * 0.6);
+        }
+        
+        return Float.toString(totalPrice);
     }
 
     /**
