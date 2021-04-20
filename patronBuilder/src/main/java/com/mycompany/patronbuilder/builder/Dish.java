@@ -45,4 +45,10 @@ public class Dish {
         return this.parts;
     }
     
+    
+    @Override
+    public String toString(){
+        return "Name: " + this.name + " Description: " + this.description + " Image: " + this.image + " Price: " + this.price;
+    }
+    
 }
