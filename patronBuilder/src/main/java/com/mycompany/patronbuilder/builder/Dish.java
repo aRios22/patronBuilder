@@ -5,6 +5,7 @@
  */
 package com.mycompany.patronbuilder.builder;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,7 +19,7 @@ public class Dish {
     String image;
     int price;
     EnumSize size;
-    List<Dish> parts;
+    List<Dish> parts = new ArrayList<Dish>();
 
     /**
      * Calcula el precio de las partes de un plato, si el tamaño del plato es medio, el precio se reduce a 60%

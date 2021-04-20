@@ -22,12 +22,11 @@ public class OrientalDish extends Dish{
      * @param size
      * @param east_rice 
      */
-    OrientalDish(String name, String description, String image, int price, EnumSize size, String type) {
+    OrientalDish(String name, String description, String image, int price, String type) {
         this.name = name;
         this.description = description;
         this.image = image;
         this.price = price;
-        this.size = size;
         this.type = type;
     }
     
