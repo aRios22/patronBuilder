@@ -13,5 +13,5 @@ public enum EnumSize {
     
     ALL,
     HALF
-    
+ 
 }

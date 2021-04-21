@@ -48,7 +48,7 @@ public class Dish {
     
     @Override
     public String toString(){
-        return "Name:" + this.name + " Description:" + this.description + " Image:" + this.image + " Price:" + this.price;
+        return "\nName: " + this.name + "\nDescription:" + this.description + "\nImage:" + this.image + "\nPrice:" + this.price;
     }
     
 }

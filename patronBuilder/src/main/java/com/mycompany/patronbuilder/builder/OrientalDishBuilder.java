@@ -66,8 +66,8 @@ public class OrientalDishBuilder extends DishBuilder {
     @Override
     public OrientalDishBuilder setSize(){
         System.out.println("Seleccione el tamaño del plato.");
-        System.out.println("1. ALL");
-        System.out.println("2. HALF");
+        System.out.println("1. Grande");
+        System.out.println("2. Mediano");
         int vSize = input.nextInt();
         
         switch (vSize) {
