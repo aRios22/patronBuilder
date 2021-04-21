@@ -3,17 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.patronbuilder.builder;
+package co.unicauca.restaurant.orientalApp;
+
+import co.unicauca.restaurant.domain.Dish;
+
 
 /**
  *
- * @author Rojas
+ * @author Andres Rios
  */
-public class ItalianDish extends Dish {
+public class OrientalDish extends Dish{
+
     String type;
 
     /**
-     * Constructor parametrizado de la clase Italian Dish.
+     * Constructor parametrizado de la clase Oriental Dish.
      * @param name
      * @param description
      * @param image
@@ -21,7 +25,7 @@ public class ItalianDish extends Dish {
      * @param size
      * @param east_rice 
      */
-    ItalianDish(String name, String description, String image, int price, String type) {
+    OrientalDish(String name, String description, String image, int price, String type) {
         this.name = name;
         this.description = description;
         this.image = image;
@@ -30,13 +34,13 @@ public class ItalianDish extends Dish {
     }
     
         /**
-     * Constructor parametrizado de la clase Italian Dish usado para construir componentes de un plato.
+     * Constructor parametrizado de la clase Oriental Dish usado para construir componentes de un plato.
      * @param name
      * @param description
      * @param image
      * @param price
      */
-    ItalianDish(String name, String description, String image, int price) {
+    OrientalDish(String name, String description, String image, int price) {
         this.name = name;
         this.description = description;
         this.image = image;

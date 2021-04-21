@@ -3,8 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.patronbuilder.builder;
+package co.unicauca.restaurant.italianApp;
 
+import co.unicauca.restaurant.domain.EnumSize;
+import co.unicauca.restaurant.services.DishBuilder;
+import co.unicauca.restaurant.orientalApp.OrientalDish;
 import java.util.Scanner;
 
 /**
@@ -53,7 +56,7 @@ public class ItalianDishBuilder extends DishBuilder {
         System.out.println("Ingrese el precio del componente: ");
         int price = input.nextInt();
         
-        this.dish.parts.add(new OrientalDish(name, description, image, price));
+        this.dish.parts.add(new ItalianDish(name, description, image, price));
         return this;
     }
     
