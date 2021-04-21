@@ -22,11 +22,11 @@ public class ClientMain {
         int opc;
         do {
             Scanner input = new Scanner(System.in);
-            System.out.println("*.- Menu.-*");
+            System.out.println("*.---------------------- Menu.----------------------*");
             System.out.println("1.- Oriental Dish");
             System.out.println("2.- Italian Dish");
             System.out.println("3.- Exit");
-            System.out.println("INGRESE OPCION:");
+            System.out.println("*.-----------------INGRESE OPCION-----------------.*");
             opc = input.nextInt();
 
             if (opc == 1) {
