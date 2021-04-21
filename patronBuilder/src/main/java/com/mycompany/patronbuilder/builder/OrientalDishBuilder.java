@@ -22,10 +22,6 @@ public class OrientalDishBuilder extends DishBuilder {
      */
     @Override
     public OrientalDishBuilder setCore(){
-
-        /*this.setDish(new OrientalDish("Arroz Oriental", 
-        "Arroz con estilo oriental, añadiendo ingredientes con sabores orientales como la soja, las verduras y las gambas",
-        "", 56000, EnumSize.ALL, "East rice"));*/
         
         System.out.println("Ingrese el nombre del plato: ");
         String name = input.nextLine();
@@ -34,7 +30,7 @@ public class OrientalDishBuilder extends DishBuilder {
         System.out.println("Ingrese una imagen descriptiva del plato: ");
         String image = input.nextLine();
         System.out.println("Ingrese el precio del plato: ");
-        int price = input.nextInt();
+        int price = Integer.parseInt(input.nextLine());
         System.out.println("Ingrese el nombre en menú del plato: ");
         String type = input.nextLine();
         
