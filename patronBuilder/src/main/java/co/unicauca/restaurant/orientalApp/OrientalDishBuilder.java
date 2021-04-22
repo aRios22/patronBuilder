@@ -5,7 +5,6 @@
  */
 package co.unicauca.restaurant.orientalApp;
 
-import co.unicauca.restaurant.orientalApp.OrientalDish;
 import co.unicauca.restaurant.services.DishBuilder;
 import co.unicauca.restaurant.domain.EnumSize;
 import java.util.Scanner;
@@ -47,7 +46,7 @@ public class OrientalDishBuilder extends DishBuilder {
      * @return 
      */
     @Override
-    public OrientalDishBuilder addParts(){
+    public boolean addParts(){
         
         System.out.println("Ingrese el nombre del componente: ");
         String name = input.nextLine();
@@ -56,10 +55,17 @@ public class OrientalDishBuilder extends DishBuilder {
         System.out.println("Ingrese una imagen descriptiva del componente: ");
         String image = input.nextLine();
         System.out.println("Ingrese el precio del componente: ");
-        int price = input.nextInt();
+        int price = Integer.parseInt(input.nextLine());
         
         this.dish.parts.add(new OrientalDish(name, description, image, price));
-        return this;
+        System.out.println("¿Desea añadir otra parte? si/no");
+        String parte = input.nextLine();
+        if ("si".equals(parte)) {
+            return true;
+        }
+        else{
+            return false;
+        }    
     }
     
     /**

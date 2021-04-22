@@ -45,7 +45,7 @@ public class ItalianDishBuilder extends DishBuilder {
      * @return 
      */
     @Override
-    public ItalianDishBuilder addParts(){
+    public boolean addParts(){
         
         System.out.println("Ingrese el nombre del componente: ");
         String name = input.nextLine();
@@ -57,7 +57,14 @@ public class ItalianDishBuilder extends DishBuilder {
         int price = input.nextInt();
         
         this.dish.parts.add(new ItalianDish(name, description, image, price));
-        return this;
+        System.out.println("¿Desea añadir otra parte? si/no");
+        String parte = input.nextLine();
+        if ("si".equals(parte)) {
+            return true;
+        }
+        else{
+            return false;
+        }    
     }
     
     /**

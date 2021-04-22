@@ -41,7 +41,7 @@ public abstract class DishBuilder {
      * Definicion metodo de interfaz
      * @return 
      */
-    public abstract DishBuilder addParts();
+    public abstract boolean addParts();
     
     /**
      * Definicion metodo de interfaz

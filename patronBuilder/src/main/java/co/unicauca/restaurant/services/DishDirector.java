@@ -37,11 +37,12 @@ public class DishDirector {
      * Construye un plato por partes
      */
     public void buildDish() {
-
-        dishBuilder
-                .setCore()
-                .addParts()
-                .setSize();
+        boolean masPartes = true;
+        dishBuilder.setCore();
+        while(masPartes){
+            masPartes = dishBuilder.addParts();
+        }
+        dishBuilder.setSize();
 
     }
 
